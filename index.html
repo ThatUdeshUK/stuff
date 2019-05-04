@@ -3,12 +3,20 @@ layout: default
 title: Stuff
 ---
 
-<h1>Hello</h1>
 <div class="row">
-  <div class="col col-sm-12 col-md-3 sidebar">
-    <div>Sidebar</div>
+  <div class="sidebar">
+    <img src="{{ site.baseurl }}/assets/images/udesh.jpg" class="sidebar-pic">
+    <h1 class="display-3 sidebar-title">Stuff</h1>
+    <p class="sidebar-des">{{ site.description }}</p>
+    
   </div>
-  <div class="col col-sm-12 col-md-9 content">
-    <div>Content</div>
+  <div class="col content">
+    {% for post in site.posts %}
+    <div class="article">
+      <h1 class="display-4"><a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a></h1>
+      <h5>{{ post.date | date_to_string }}</h5>
+      <p>{{ post.content }}</p>
+    </div>
+    {% endfor %}
   </div>
 </div>
