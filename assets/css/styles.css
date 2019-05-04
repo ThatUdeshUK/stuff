@@ -8,7 +8,7 @@ body {
 .sidebar-pic {
   width: 100%;
   border-radius: 12px;
-  margin-top: 3rem;
+  margin-top: 4rem;
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
@@ -28,16 +28,18 @@ body {
 
 .content {
   margin-left: 280px;
-  margin-top: 3rem;
+  margin-top: 4rem;
   padding: 1rem 0rem 1rem 5rem; }
 
 .article {
   margin-bottom: 5rem; }
 
+.article .display-4 {
+  font-family: "Lora", serif; }
+
 .article a {
   text-decoration: none;
-  color: #333;
-  font-family: "Lora", serif; }
+  color: #333; }
 
 .article a:hover {
   color: #303f9f;
@@ -45,9 +47,17 @@ body {
 
 .article h5 {
   font-family: "Roboto", sans-serif;
-  color: #999; }
+  color: #999;
+  margin-bottom: 2rem; }
 
 .article p {
   color: #555;
   font-family: "Roboto", sans-serif;
   text-align: justify; }
+
+.post {
+  margin: 6rem auto; }
+
+.post .post-back {
+  font-weight: bold;
+  margin-bottom: 2rem; }
