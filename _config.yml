@@ -10,6 +10,6 @@ twitter_username: ThatUdeshUK
 github_username:  UdeshUK
 
 markdown: kramdown
-theme: minima
+theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
