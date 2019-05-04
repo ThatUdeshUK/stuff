@@ -5,7 +5,7 @@ date:   2019-05-04 19:18:38 +0530
 categories: thoughts
 ---
 
-Today I noticed that the more usually and popular DJs and their sets not much more interesting and creative.
+Today I noticed that the most of the time, popular DJs and their sets are not much interesting and creative.
 
 Yes, most of them are very good music producers which made great pieces of music. But since they are popular and well known they have a status to maintain. Most of them give a major flavor to their own music in their sets. This I think reasonable since they have to market their creation and this is one of the best ways. Imaging hundreds of people dancing to your jam. Also when it comes to mediums other than the music in a set, a popular DJ should spend a vast amount of resources for lighting, visuals, fireworks and other flashy stuff in order to make it perfect. Most of the time DJs have to imitate themselves too. They have to act for the label, shout out fellow DJ of the label and keep their gained status by not doing a crazy stupid thing. All these other interests make a producer or a DJ less concentrated about their music or the actual mix their performing. And when it comes to the crowd, a popular DJ would have huge crowd without a single gap but most of the people come because of the DJ's popularity not really the enjoy the set and with less space to dance it ruin the enjoyment of the real fan too. 
 
