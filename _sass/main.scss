@@ -3,6 +3,7 @@ body {
 }
 
 $sidebar-size: 280px;
+$top-margin-size: 4rem;
 $accent-color: #303f9f;
 $lora: 'Lora', serif;
 $roboto: 'Roboto', sans-serif;
@@ -16,7 +17,7 @@ $playfair: 'Playfair Display', serif;
 .sidebar-pic {
   width: 100%;
   border-radius: 12px;
-  margin-top: 3rem;
+  margin-top: $top-margin-size;
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
@@ -38,7 +39,7 @@ $playfair: 'Playfair Display', serif;
 
 .content {
   margin-left: $sidebar-size;
-  margin-top: 3rem;
+  margin-top: $top-margin-size;
   padding: 1rem 0rem 1rem 5rem;
 }
 
@@ -46,10 +47,13 @@ $playfair: 'Playfair Display', serif;
   margin-bottom: 5rem;
 }
 
+.article .display-4 {
+  font-family: $lora;
+}
+
 .article a {
   text-decoration: none;
   color: #333;
-  font-family: $lora;
 }
 
 .article a:hover {
@@ -60,10 +64,20 @@ $playfair: 'Playfair Display', serif;
 .article h5 {
   font-family: $roboto;
   color: #999;
+  margin-bottom: 2rem;
 }
 
 .article p {
   color: #555;
   font-family: $roboto;
   text-align: justify;
+}
+
+.post {
+  margin: 6rem auto;
+}
+
+.post .post-back {
+  font-weight: bold;
+  margin-bottom: 2rem;
 }
