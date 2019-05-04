@@ -4,7 +4,7 @@ description: >-
   Udesh Kumarasinghe's personal blog. Here I write and post my ideas, opinions
   or any thing else that comes to my mind. Most of the post will be technical 
   stuff but I try to keep an open mind. 
-baseurl: ""
+baseurl: "/stuff"
 url: "stuff.udesh.xyz"
 twitter_username: ThatUdeshUK
 github_username:  UdeshUK
