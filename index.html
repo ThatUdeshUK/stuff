@@ -4,13 +4,18 @@ title: Stuff
 ---
 
 <div class="row">
-  <div class="sidebar">
+  <div class="sidebar sidebar-collapse">
+    <div class="sidebar-toggle sidebar-inner" onclick="collapseSidebar()">
+      <img src="{{ site.baseurl }}/assets/images/close.svg">
+    </div>
     <img src="{{ site.baseurl }}/assets/images/udesh.jpg" class="sidebar-pic">
     <h1 class="display-3 sidebar-title">Stuff</h1>
     <p class="sidebar-des">{{ site.description }}</p>
-    
   </div>
   <div class="col content">
+    <div class="sidebar-toggle" onclick="openSidebar()">
+      <img src="{{ site.baseurl }}/assets/images/menu.svg">
+    </div>
     {% for post in site.posts %}
     <div class="article">
       <h1 class="display-4"><a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a></h1>
