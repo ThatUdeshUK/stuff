@@ -16,15 +16,21 @@
 </head>
 
 <body>
+  <script src="/stuff/assets/js/main.js"></script>
   <div class="container">
     <div class="row">
-  <div class="sidebar">
+  <div class="sidebar sidebar-collapse">
+    <div class="sidebar-toggle sidebar-inner" onclick="collapseSidebar()">
+      <img src="/stuff/assets/images/close.svg">
+    </div>
     <img src="/stuff/assets/images/udesh.jpg" class="sidebar-pic">
     <h1 class="display-3 sidebar-title">Stuff</h1>
     <p class="sidebar-des">I'm Udesh Kumarasinghe, This is my personal blog where I write and post my ideas, opinions or any thing that comes to my mind. Most of the posts will be technical stuff but I try to keep an open mind. </p>
-    
   </div>
   <div class="col content">
+    <div class="sidebar-toggle" onclick="openSidebar()">
+      <img src="/stuff/assets/images/menu.svg">
+    </div>
     
     <div class="article">
       <h1 class="display-4"><a href="/stuff//thoughts/2019/05/04/that-perfect-live-set.html">That Perfect Live Set</a></h1>

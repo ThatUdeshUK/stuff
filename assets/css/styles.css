@@ -3,12 +3,60 @@ body {
 
 .sidebar {
   position: fixed;
-  width: 280px; }
+  left: 0;
+  width: 320px;
+  z-index: 1;
+  height: 100%;
+  background-color: #efefef;
+  padding: 0 1rem;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  @media screen and (min-width: 576px) {
+    .sidebar {
+      left: 0;
+      width: 320px; } }
+  @media screen and (min-width: 768px) {
+    .sidebar {
+      left: unset;
+      width: 200px;
+      background-color: transparent;
+      padding: 0; } }
+  @media screen and (min-width: 992px) {
+    .sidebar {
+      left: unset;
+      width: 280px;
+      background-color: transparent;
+      padding: 0; } }
+
+.sidebar-collapse {
+  left: -320px; }
+  @media screen and (min-width: 768px) {
+    .sidebar-collapse {
+      left: unset; } }
+  @media screen and (min-width: 992px) {
+    .sidebar-collapse {
+      left: unset; } }
+
+.sidebar-toggle {
+  margin-bottom: 2rem;
+  visibility: hidden; }
+  @media screen and (max-width: 768px) {
+    .sidebar-toggle {
+      visibility: visible; } }
+
+.sidebar-toggle img {
+  width: 32px;
+  height: 32px; }
+
+.sidebar-inner {
+  margin-top: 2rem;
+  text-align: right; }
 
 .sidebar-pic {
   width: 100%;
   border-radius: 12px;
-  margin-top: 4rem;
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
@@ -27,9 +75,17 @@ body {
   font-family: "Roboto", sans-serif; }
 
 .content {
-  margin-left: 280px;
-  margin-top: 4rem;
-  padding: 1rem 0rem 1rem 5rem; }
+  margin-left: 0px;
+  margin-top: 2rem;
+  padding: 0rem 1rem 1rem 1rem; }
+  @media screen and (min-width: 768px) {
+    .content {
+      margin-left: 200px;
+      padding: 1rem 0rem 1rem 5rem; } }
+  @media screen and (min-width: 992px) {
+    .content {
+      margin-left: 280px;
+      padding: 1rem 0rem 1rem 5rem; } }
 
 .article {
   margin-bottom: 5rem; }
