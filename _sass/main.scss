@@ -2,8 +2,16 @@ body {
   background-color: #f5f5f5;
 }
 
-$sidebar-size: 280px;
-$top-margin-size: 4rem;
+// Grid breakpoints
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+
+$sidebar-size-md: 200px;
+$sidebar-size-lg: 280px;
+$sidebar-size-collapsed: 320px;
+
+$top-margin-size: 2rem;
 $accent-color: #303f9f;
 $lora: 'Lora', serif;
 $roboto: 'Roboto', sans-serif;
@@ -11,13 +19,65 @@ $playfair: 'Playfair Display', serif;
 
 .sidebar {
   position: fixed;
-  width: $sidebar-size;
+  left: 0;
+  width: $sidebar-size-collapsed;
+  z-index: 1;
+  height: 100%;
+  background-color: #efefef;
+  padding: 0 1rem;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  @media screen and (min-width: $small) {
+    left: 0;
+    width: $sidebar-size-collapsed;
+  }
+  @media screen and (min-width: $medium) {
+    left: unset;
+    width: $sidebar-size-md;
+    background-color: transparent;
+    padding: 0;
+  }
+  @media screen and (min-width: $large) {
+    left: unset;
+    width: $sidebar-size-lg;
+    background-color: transparent;
+    padding: 0;
+  }
+}
+
+.sidebar-collapse {
+  left: -$sidebar-size-collapsed;
+  @media screen and (min-width: $medium) {
+    left: unset;
+  }
+  @media screen and (min-width: $large) {
+    left: unset;
+  }
+}
+
+.sidebar-toggle {
+  margin-bottom: 2rem;
+  visibility: hidden;
+  @media screen and (max-width: $medium) {
+    visibility: visible;
+  }
+}
+
+.sidebar-toggle img {
+  width: 32px;
+  height: 32px;
+}
+
+.sidebar-inner {
+  margin-top: $top-margin-size;
+  text-align: right;
 }
 
 .sidebar-pic {
   width: 100%;
   border-radius: 12px;
-  margin-top: $top-margin-size;
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
@@ -38,9 +98,17 @@ $playfair: 'Playfair Display', serif;
 }
 
 .content {
-  margin-left: $sidebar-size;
+  margin-left: 0px;
   margin-top: $top-margin-size;
-  padding: 1rem 0rem 1rem 5rem;
+  padding: 0rem 1rem 1rem 1rem;
+  @media screen and (min-width: $medium) {
+    margin-left: $sidebar-size-md;
+    padding: 1rem 0rem 1rem 5rem;
+  }
+  @media screen and (min-width: $large) {
+    margin-left: $sidebar-size-lg;
+    padding: 1rem 0rem 1rem 5rem;
+  }
 }
 
 .article {
