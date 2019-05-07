@@ -36,6 +36,7 @@ $playfair: 'Playfair Display', serif;
   }
   @media screen and (min-width: $medium) {
     left: unset;
+    overflow-y: unset;
     width: $sidebar-size-md;
     background-color: transparent;
     padding: 0;
